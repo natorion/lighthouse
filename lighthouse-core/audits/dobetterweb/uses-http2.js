@@ -71,9 +71,9 @@ class UsesHTTP2Audit extends Audit {
     });
 
     let displayValue = '';
-    if (resources.length > 2) {
+    if (resources.length > 1) {
       displayValue = `${resources.length} resources were not served over h2`;
-    } else if (resources.length) {
+    } else if (resources.length === 1) {
       displayValue = `${resources.length} resource was not served over h2`;
     }
 
